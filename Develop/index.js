@@ -60,11 +60,9 @@ function init() {
         .then(function (data) {
             const filename =
                 data.name
-                    .toLowerCase()
-                    .split(' ')
-                    .join('') + '.json';
+                   
             console.log(data)
-            fs.writeFile(filename, JSON.stringify(data, null, '\t'), function (err) {
+            fs.writeFile(filename, JSON.stringify(data, null, './readme-guide.md'), function (err) {
                 if (err) {
                     return console.log(err);
                 }
@@ -81,4 +79,4 @@ function init() {
 
 
 // // function call to initialize program
- init();
+init();
