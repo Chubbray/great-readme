@@ -52,14 +52,14 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    return console.log(name);
+    return
 }
 
 function init() {
     inquirer.prompt(questions)
         .then(function (data) {
-            const filename =
-                data.name
+            const filename = 
+                "README.md"
 
             console.log(data)
             fs.writeFile(filename, JSON.stringify(data, null, '\t'), function (err) {
