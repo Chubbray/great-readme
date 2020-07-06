@@ -52,7 +52,7 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    return
+    return console.log(name);
 }
 
 function init() {
@@ -60,9 +60,9 @@ function init() {
         .then(function (data) {
             const filename =
                 data.name
-                   
+
             console.log(data)
-            fs.writeFile(filename, JSON.stringify(data, null, './readme-guide.md'), function (err) {
+            fs.writeFile(filename, JSON.stringify(data, null, '\t'), function (err) {
                 if (err) {
                     return console.log(err);
                 }
